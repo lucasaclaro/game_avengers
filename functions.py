@@ -1,7 +1,27 @@
+from time import sleep
+
 def fight(hero_one, hero_two, attack, hero_one_attack, hero_two_attack):
     if hero_one_attack > hero_two_attack:
-        return f"{hero_one} attack {hero_two}.\nChosen skill: {attack}.\n{hero_one}: {hero_one_attack}.\n{hero_two}: {hero_two_attack}.\nPOW!!!\n{hero_one} wins!!"
+        print(f"{hero_one} attack {hero_two}!")
+        sleep(1)
+        print(f"\n\n{hero_one} has {hero_one_attack} points of {attack}.\n{hero_two} has {hero_two_attack} points of {attack}.")
+        sleep(1)
+        print('POW!!!')
+        sleep(2)
+        print(f"{hero_one} wins!!")
     elif hero_one_attack < hero_two_attack:
-        return f"{hero_two} attack {hero_one}\nChosen skill: {attack}\n{hero_one}: {hero_one_attack}\n{hero_two}: {hero_two_attack}\nPOW!!!\n{hero_two} wins!!"
+        print(f"{hero_two} attack {hero_one}!")
+        sleep(1)
+        print(f"\n\n{hero_two} has {hero_two_attack} points of {attack}.\n{hero_one} has {hero_one_attack} points of {attack}.")
+        sleep(1)
+        print('POW!!!')
+        sleep(2)
+        print(f"{hero_two} wins!!")
     else:
-        return f"{hero_one} attack {hero_two}\nChosen skill: {attack}\n{hero_one}: {hero_one_attack}\n{hero_two}\nPOW!!!\nDraw!!"
+        print(f"{hero_two} attack {hero_one}!")
+        sleep(1)
+        print(f"\n\n{hero_two} has {hero_two_attack} points of {attack}.\n{hero_one} has {hero_one_attack} points of {attack}.")
+        sleep(1)
+        print('POW!!!')
+        sleep(2)
+        print(f"Draw!!")
