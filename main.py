@@ -46,7 +46,7 @@ print(f'Skills of {character_one.name}:\n{character_one.show_skills()}\n')
 
 
 list_characters = [1, 2, 3, 4]
-list_characte
+
 
 
 character_two = randint(1, 4)
