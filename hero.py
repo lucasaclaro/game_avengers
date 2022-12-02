@@ -17,8 +17,14 @@ class Hero:
             return self.punch
         elif attack == 'kick':
             return self.kick
+        elif attack == 'special':
+            return self.special
         elif attack == 'intelligence':
             return self.intelligence
         else:
             return 'Invalid attack'
+
+
+    def show_skills(self):
+        return f"Power: {self.power}\nMagic: {self.magic}\nPunch: {self.punch}\nKick: {self.kick}\nSpecial: {self.special}\nIntelligence: {self.intelligence}"
 
